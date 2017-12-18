@@ -60,18 +60,24 @@ int main(int argc, char * argv[]) {
    _myFeatureDetector2.changeFeatureDetector(_CORNER_ORB);
    
    // We detect keypoints in img1
-   // TODO: detect Features in img1 here!
+   // detect Features in img1 here!
+   _myFeatureDetector1.setImage(im1);
+   _myFeatureDetector1.detectFeatures();
    
    // Display keypoints of image1
-   // TODO: diplay Features detected in img1 in the following window
+   // diplay Features detected in img1 in the following window
+   imKP1 = _myFeatureDetector1.displayFeatures();
    namedWindow("KeyPoints Image 1");
    imshow("KeyPoints Image 1", imKP1);
    
    // We detect keypoints in img2
    // TODO: detect Features in img1 here!
+   _myFeatureDetector2.setImage(im2);
+   _myFeatureDetector2.detectFeatures();
    
    // Display keypoints in image2
    // TODO: diplay Features detected in img1 in the following window
+   imKP2 = _myFeatureDetector2.displayFeatures();
    namedWindow("KeyPoints Image 2");
    imshow("KeyPoints Image 2", imKP2);
    
