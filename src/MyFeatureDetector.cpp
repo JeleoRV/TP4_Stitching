@@ -31,8 +31,10 @@ void MyFeatureDetector::changeFeatureDetector(int detectorType){
          // ORB
       case _CORNER_ORB:
       default:
-         // TODO : create detector
-         // TODO store detector method
+         // create detector
+		  _myFeatureDetector = ORB::create();
+         // store detector method
+		  _myFeatureDetectorMethod = _CORNER_ORB;
          break;
    }
 }
