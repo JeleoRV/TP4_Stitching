@@ -67,11 +67,6 @@ Mat MyDescriptorExtractor::getDescriptors() {
    return _myDescriptors;
 }
 
-// Getting the current descriptor extractor method used
-int MyDescriptorExtractor::getDescriptorExtractorMethod() {
-   return _myDescriptorExtractorMethod;
-}
-
 // Getting the name of the detector given it's index
 const string MyDescriptorExtractor::getDescriptorExtractorName() {
    return MyDescriptorExtractor::getDescriptorExtractorName(_myDescriptorExtractorMethod);

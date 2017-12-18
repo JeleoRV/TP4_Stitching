@@ -8,7 +8,6 @@
 
 
 #include "main.h"
-#include <unistd.h>
 #include <iomanip>
 
 #include <opencv2/highgui/highgui.hpp>
